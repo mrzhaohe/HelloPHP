@@ -1,0 +1,54 @@
+1.表单标签
+
+  form 标签
+    form 提交方式 get post
+
+    eg:<form action="save.php?id=10" method="get/post"/></form>
+
+2.input 输入框
+
+  type 属性：
+
+      text
+      password
+      hidden
+      file
+
+      radio
+      checkbox
+
+      submit
+      reset
+      button
+      tel
+      search
+      color
+      url
+
+    name 属性：
+    value 属性：
+    checked 属性：
+
+3.下拉框
+
+  select 标签
+  <select name="">
+    <option value="1">选项1</option>
+    <option value="2">选项2</option>
+    <option value="3">选项3</option>
+  </select>
+
+4.多行文本域
+
+  textarea 标签
+      <textarea name="">默认值写中间</textarea>
+
+
+
+
+
+
+
+
+form
+    表格

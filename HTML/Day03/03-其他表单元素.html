@@ -2,44 +2,57 @@
 <html>
 
 <head>
-    <title>其他表单元素</title>
+  <meta charset="utf-8">
+
+  <title>其他表单元素</title>
 </head>
 
 <body>
-    <!-- 
+  <!--
 其他表单元素：
 	select 标签：定义一个下拉框
 	必须要和option一起使用，为select 提供下拉选项
-		
-		mutiple 可多选 
+
+		mutiple 可多选
 		size 默认显示的条目数
-		
+
 	option 表示它的每一项
-		
+
 		value 属性：为下拉选项定义要提交的值，如果没有value 属性则提交中间的文字
-		
+
 		selected 属性： 为下拉框设置默认选项
 
+  textarea标签: 多行文本域
+    cols 属性： 设置文本域的宽度 单位是字
+    rows 属性： 设置文本域的高度 单位是行
+    如何为文本域设置 默认值?
 
+  label 标签  为input 标签设置标注（可以选中input 标签里的内容）
+      使用label 标签将输入框和标识一起包含起来
+  <p><label>用户名:<input type="text" name="username"></label></p>
 
 
  -->
-    <form action="" method="get">
-        <p>用户名:
-            <input type="text" name="username">
-        </p>
-        <p>所在城市:
-            <select name="city" multiple="multiple" size="2">
-                <option value="1">beijing</option>
+  <form action="" method="get">
+    <p><label>用户名:
+    <input type="text" name="username"></label>
+    </p>
+    <p>所在城市:
+      <select name="city" multiple="multiple" size="2">
+              <option value="1">beijing</option>
                 <option value="2">shanghai</option>
                 <option value="3">chengdu</option>
                 <option value="4">shenzhen</option>
                 <option value="5" selected="selected">chongqing</option>
             </select>
-            <p></p>
-            <p>
-                <input type="submit" value="提交">
-            </p>
+      <p></p>
+      <p>
+        <input type="submit" value="提交">
+      </p>
+
+      <p> 个人介绍:
+        <textarea cols="10" rows="5" name="textarea">这里是文本域的默认值</textarea></p>
+
     </form>
 </body>
 </html
