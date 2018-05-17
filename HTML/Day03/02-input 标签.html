@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>input 标签</title>
+</head>
+
+<body>
+
+  <!--
+input 标签 :
+  为用户提供输入内容的空间，根据不同的 type 属性会表现出不同的外观或者控件
+语法：
+ <input type="text" name="" value=""/>
+
+ type 属性：
+      text 文本框
+      password 密码框
+      submit 提交按钮
+      reset 回到初始状态
+      button 普通按钮：不产生任何作用
+
+      radio 单选框
+        1) 要制作一组单选框 name 值必须是同一个值
+        2)并且为每一个单选框设置value 值 传数据时传递value 值
+        3) 默认选中哪一个 就添加 checked="checked"
+
+      checkbox 复选框 用法同上
+        由于复选框的名字是一样的 所以会产生相互覆盖 将名字写成数组的样式
+
+      file 文件上传框
+
+      hidden 隐藏域 在用户不知情的情况下悄悄的传值
+        1）必须写 name 属性 和 value 属性 因为用户是无法更改这个控件的
+
+
+ name 属性：设置输入框的参数名,值是用户输入的值
+    1）在 input 标签中如果要传输数据必须出现name 属性 如果不出现则无法传输该数据
+
+value 属性:设置input 的属性值
+-->
+
+
+  <form action="" method="get">
+
+    <input type="hidden" name="author" />
+
+
+    <p>用户名： <input type="text" name="username" value="默认值" /></p>
+    <p>密码： <input type="password" name="pwd" id="pwd"></p>
+    <!-- 单选框 radio name 是一组 -->
+    <p>性别
+      <input type="radio" name="gender" value="female" checked="checked" />男
+      <input type="radio" name="gender" value="male" />女
+    </p>
+    <!-- 多选框 -->
+    <p>爱好
+      <input type="checkbox" name="hobby[]" value="basketball" />篮球
+      <input type="checkbox" name="hobby[]" value="football" />足球
+      <input type="checkbox" name="hobby[]" value="swim" />游泳
+    </p>
+    <!--  上传-->
+    <p>上传头像
+      <input type="file" name="upfile" />
+    </p>
+
+    <p><input type="submit" />
+      <input type="reset" value="reset" />
+      <input type="button" value="我是来调js的" onclick="myfunc();" />
+    </p>
+    <p>你最喜欢的颜色<input type="color" name="color"></p>
+  </form>
+
+  <script type="text/javascript">
+    function myfunc() {
+      var pwd = document.querySelector('#pwd');
+      var obj = document.querySelector("form");
+      if (pwd.value.length < 6) {
+        alert("密码不能少于6位");
+      } else {
+        obj.submit();
+      }
+    }
+  </script>
+
+</body>
+
+</html>

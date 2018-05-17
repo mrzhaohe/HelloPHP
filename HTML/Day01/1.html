@@ -1,0 +1,30 @@
+<!DOCTYPE html><!-- 文档声明 -->
+<html> <!-- 根标签 -->
+  <head><!--  标签用于定义文档的头部 文档的描述信息 不会被展示出来-->
+<meta charset="utf-8"/>
+<title>初识 HTML</title>
+
+</head>
+<!-- body 标签声明网页的内容部分 所有表现出来的内容必须放在body 标签内 -->
+<body>
+  <h1 id="myid">Hello HTML</h1>
+
+<script type="text/javascript">
+
+var h1=document.getElementById('myid');
+  h1.onmouseover = function(){
+  // alert('不要点我');
+this.style.border="4px solid #f00";
+}
+h1.onmouseout = function(){
+  this.style.border="0";
+}
+
+</script>
+
+</body>
+
+</html>
+
+<!-- hyper text markup language -->
+<!-- html 4.01 经典的 标记语言 -->

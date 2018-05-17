@@ -1,0 +1,62 @@
+重点内容：
+HTML 的基本语法
+
+
+1.标签的语法
+
+<标签名> 相应的内容 </标签名>
+<h1> 今天学了 HTML 基础</h1>
+<meta charset="utf-8"/>
+<hr/> 横线
+<br/> 换行
+
+2.HTML 的基本结构
+
+<!DOCTYPE html> 文档声明
+<html>
+<head>
+
+</head>
+
+<body>
+所有要展示的内容都必须放在body 标签内
+</body>
+
+</html>
+
+
+3.HTML 的标签 
+
+基本标签
+  标题标签 h1....h6
+  段落 p
+
+标签格式化
+  加粗 strong
+  斜体 em
+  删除 del
+
+布局标签
+  span 没有效果
+  div  块标签 没有效果
+
+资源标签
+ script
+ style
+ src
+
+特殊符号
+ &lt   <
+ &gt   >
+ &nbsp 空格
+ &copy ©️
+
+
+
+
+
+
+
+
+
+

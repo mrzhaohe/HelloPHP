@@ -1,0 +1,36 @@
+<!-- 表单 form 数据采集
+三个基本组成部分
+1）表单标签： 这里面包含了处理表单数据所用 PHP 程序的 URL 以及数据提交到服务器的方法
+2）表单域： 包含了文本框 密码框 隐藏域 多行文本框 复选框 单选框 下拉选择框和文件上传框
+3）表单按钮：包括提交按钮 复位按钮和一般按钮
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>form 标签</title>
+</head>
+
+<body>
+
+<!--
+form 标签：定义表单区域，负责传输数据
+    action属性： 设置表单提交的目标网址 URL
+    method 属性：
+      get 方法：将数据附加在网址的后面进行传输
+      post 方法：不会附加在网址的后面
+      form 表单通常使用post方式 只有一个例外：搜索框
+
+-->
+<form action="https://www.baidu.com/index.php" method="post" >
+<p>用户名：<input type="text" name="username"/></p>
+<p>密码：<input type="password"/ name="pwd"/></p>
+<p> <input type="submit"/></p>
+</form>
+
+</body>
+
+</html>

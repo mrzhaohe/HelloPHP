@@ -1,0 +1,81 @@
+<!DOCTYPE hrml>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 表格合并 跨行 跨列 </title>
+<style media="screen">
+  table{border: 1px solid #f00; }
+  td,th{text-align: center;border: 1px solid #f00;}
+</style>
+
+</head>
+<body>
+<!--
+
+合并表格的属性：
+colspan :跨列
+rowspan :跨列
+
+注意：
+  1）跨行和跨列的属性添加到【单元格】中
+  2）先做一个完整的表格。再通过跨行和跨列的属性制作最终效果
+-->
+
+
+
+<h1>完整的表格</h1>
+<table border="1" width=600>
+  <tr>
+    <td>星期四菜谱</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>星期四菜谱</td>
+    <td>12</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>星期四菜谱</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>星期四菜谱</td>
+    <td>4</td>
+    <td>4</td>
+  </tr>
+
+
+</table>
+<h1>最终的效果</h1>
+<table border="1" width=600 cellspacing="0">
+  <tr>
+    <th colspan="3">星期四菜谱</th>
+  </tr>
+  <tr>
+    <td rowspan="2">素材</td>
+    <td>青菜茄子</td>
+    <td>花椒扁豆</td>
+  </tr>
+  <tr>
+    <td>小葱豆腐</td>
+    <td>炒白菜</td>
+  </tr>
+  <tr>
+    <td rowspan="2">荤菜</td>
+    <td>油焖大虾</td>
+    <td>海参鱼翅</td>
+  </tr>
+
+  <tr>
+    <td>红烧肉<img src="timg (1).jpeg" width="100"></td>
+    <td>烤全羊</td>
+  </tr>
+
+
+</table>
+
+
+</body>
+</html>
