@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS 的三种引入方式</title>
+  <!-- 内部 css -->
+<style media="screen">
+  div{color:red;font-size:50px;}
+</style>
+  <!-- 外部 css -->
+<link rel="stylesheet" href="./03.css"/>
+
+</head>
+
+<body>
+
+
+<!--
+CSS 的三种引入方式：
+
+    1.行内 CSS
+      在标签上添加 style 属性，在属性值的位置可以写 CSS  叫行内CSS
+      作用范围：只针对当前标签及子标签起作用
+      eg:
+        <span style="color:red;font-size:50px;">hello,源码时代</span>
+
+    2.内部 CSS
+      在HTML 页面的任何位置添加<style>标签，在标签内可以写 css 样式
+      eg:
+      <style media="screen">
+        div{color:red;font-size:50px;font-family:'隶书';}
+      </style>
+
+    3.外部 CSS
+      独立的 css 文件 再使用link 标签引入到当前文件
+      <link rel="stylesheet" href="./03.css"/>
+
+ -->
+ <div>星期一</div>
+ <div>星期三</div>
+ <div>星期三</div>
+
+</body>
+</html>
