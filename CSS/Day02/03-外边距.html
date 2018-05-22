@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>外边距</title>
+
+<style>
+/*
+
+注意： 1）板块居中
+          margin:xpx auto;  /x 是上下边距 auto 左右居中
+      2)外边距在不同的浏览器表现不一样 建议尽量少用 能使用内边距的尽量使用内边距
+
+ */
+
+
+/* 清除所有内外边距  */
+h1,h2,h3,h4,h5,h6,h7,p,form,ol,dd,dl,dt,ul,body{margin:0;padding: 0;}
+
+.box2{
+  background: #ddd;
+  border: 10px solid #000;
+  margin:10px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  text-align: center;/*文本居中*/
+  margin: auto;/* 板块居中 */
+}
+
+
+.box1,.box3 {background: #ccc;}
+
+.sub{
+  background: #ff0;
+  width: 100px;
+  height: 50px;
+  /* margin-top: 10px; 外边距少用*/
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="box1">盒子1</div>
+
+<div class="box2">
+<div class="sub"></div>
+
+
+  盒子2</div>
+
+<div class="box3">盒子3</div>
+
+</body>
+</html>

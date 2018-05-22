@@ -34,17 +34,26 @@
               fixed:背景不随着内容滚动
               scroll:默认是滚动的
 
+    background  （复合属性）设置背景属性 【背景】【常用】
+              background:背景颜色 背景图片 是否平铺 是否滚动 位置；
+              <Font 属性需要注意属性位置，background则不需要>
  -->
 
   <style>
     .box1 {
       width: 800px;
       height: 600px;
-      background-color: #001fff;
+      /* background-color: #001fff;
       background-image: url(./timg.jpeg);
       background-position: 50%;
       background-repeat: repeat;
-      background-attachment: fixed;
+      background-attachment: fixed; */
+
+
+/* 复合属性 */
+
+background: #f00 url(./timg.jpeg) repeat 50% fixed;
+
     }
   </style>
 

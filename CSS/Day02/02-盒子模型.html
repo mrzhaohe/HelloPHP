@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>盒子模型</title>
+
+<style>
+
+
+/*
+    边框属性：
+          border-width 边框的宽度
+              值： 长度单位
+              1个值： 对四条边起作用
+              2个值： 第1个值对上下起作用，第2个值对左右起作用
+              3个值： 上左下
+              4个值： 上下左右
+          border-style 边框的线型
+              solid 实现
+              dashed 虚线
+              dotted 点线
+              double 双线
+              属性使用 同上 四个值
+          border-color 边框的颜色
+
+border 设置边框的属性 【重点】
+  border: 宽度 线型 颜色
+
+  border-top 设置上边距
+  border-left 设置左边距
+  border-bottom 设置下边距
+  border-right 设置右边距
+
+        三个要素全部到齐才能显示出边框效果！
+
+*/
+
+/* 清除所有内外边距  */
+/*h1,h2,h3,h4,h5,h6,h7,p,form,ol,dd,dl,dt,ul,body{margin:0;padding: 0;} */
+
+p{border-style: solid;border-width: 1px;}
+
+
+.box1{
+width: 500px;
+height: 300px;
+background: #aaa;
+
+/* border-width: 2px;
+border-style: dashed;
+border-color: #f00; */
+/* border 复合属性 */
+border: 2px dashed #f00;
+}
+
+.box2{
+  width: 200px;
+  height: 100px;
+  border: 3px dotted #f00;
+  border-bottom: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<p>  我是盒子模型 </p>
+
+<div class="box1">盒子1</div>
+<br/>
+<br/>
+
+<div class="box2">盒子2</div>
+
+<div class="box3">盒子3</div>
+
+</body>
+</html>
