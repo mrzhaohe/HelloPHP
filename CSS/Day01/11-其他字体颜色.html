@@ -1,0 +1,81 @@
+<!--
+其他字体属性：
+    color  设置字体的颜色
+        颜色的取值：
+          1.英文名称
+            red green blue
+          2.16进制的颜色值
+
+            #6位数颜色值
+            #RRGGBB red green blue
+            #FF0000  红色
+            #00FF00  绿色
+            #0000FF  蓝色
+            #000000  黑色
+            #FFFFFF  白色
+
+            #3位数颜色值
+            #RGB 是6位数的缩写 必须是每一个颜色段同时相同才能缩写
+
+          3.十进制的颜色值
+              rgb(255,255,255)白色
+              rgb(255,0,0)  红色
+              rgb(0,255,0)  绿色
+              rgb(0,0,255)  蓝色
+
+
+
+            text-decoration 设置下划线
+                underline 下划线
+                line-through 删除线
+            letter-spacing 字间距
+            text-indent 文本缩进
+            text-align 文本对齐方式
+
+
+ -->
+
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>字体属性</title>
+
+  <style>
+    div {
+      background: #f00;
+      font-size: 30px;
+      font-family: 微软雅黑;
+      text-decoration: line-through;
+      color: rgba(255, 255, 255, 1);
+      letter-spacing: 3px; //字间距
+      width: 300;
+      text-align: center;
+
+    }
+
+    p {
+      text-indent: 2em; //首行缩进
+      /* 或者 font-size: 12px; text-indent:24px; */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div>CSS的优先级1</div>
+  <div>CSS的优先级3</div>
+  <div>CSS的优先级4</div>
+
+  <p>
+    登录全国各大新闻网站、客户端互动专区参与2、寻找、分享自己家族的英雄故事（不同年代的报国家书、老物件、报国故事等），将相关照片、视频、文字，发送至人民日报征集邮箱yingxiong@pdnews.cn，以及各平台征集邮箱 　　3、通过新浪微博平台，上传发布相关照片、视频或撰写文字故事，加话题#我们家的报国故事# 并@人民日报
+
+  </p>
+
+</body>
+
+</html>

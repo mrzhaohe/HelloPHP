@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>背景属性</title>
+
+  <!--
+
+背景属性：
+    background-color 设置背景的颜色
+      transparent 没有背景颜色
+
+    background-image 设置背景的图片
+      background-image:url （图片的路径）;//图片的路径是以css 文件为出发点找图片
+
+    background-position 背景图位置
+      1个值 50% 水平位置 50px
+      2个值 50px 50px
+      值：
+        百分比 10%
+        固定值 50px
+        方位词 left right top bottom center
+
+    background-repeat 背景平铺
+              repeat  默认平铺
+              no-repeat 不平铺
+              repeat-x x轴平铺
+              repeat-y y轴平铺
+
+
+    background-attachment 背景是否固定/滚动
+              fixed:背景不随着内容滚动
+              scroll:默认是滚动的
+
+ -->
+
+  <style>
+    .box1 {
+      width: 800px;
+      height: 600px;
+      background-color: #001fff;
+      background-image: url(./timg.jpeg);
+      background-position: 50%;
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div class="box1">盒子1</div>
+  <div class="box2">盒子2</div>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+
+</html>

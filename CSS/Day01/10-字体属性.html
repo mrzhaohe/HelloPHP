@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>字体属性</title>
+
+  <style>
+    /*
+
+    字体属性：
+        font-size 字体大小
+          单位：
+              px：pc
+              rem:手机上：基于 html 根标签的
+              em
+
+        font-weight 字体粗细
+        font-family 设置字体
+        font-style  设置字形
+        line-height 行间距
+        font 设置字体的各种样式 （复合属性 1个顶5个）
+            属性值的顺序：
+            顺序不能变： 字形 粗细 大小/行高 字体名称
+
+
+ */
+
+    body {
+      font-size: 50px;
+    }
+
+    div {
+      /* font-size: 1.5rem;
+      font-weight: bold;
+      font-family: 微软雅黑;
+      font-style: italic;
+      line-height: 30px; */
+
+/* 复合属性
+    顺序不能变： 字形 粗细 大小/行高 字体名称
+
+ */
+font:italic bold 1.5rem/30px 微软雅黑;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div>CSS的优先级1</div>
+  <div>CSS的优先级3</div>
+  <div>CSS的优先级4</div>
+</body>
+
+</html>
