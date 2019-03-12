@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- 
+
+css引入的三种方式 ：
+1、行内 css 
+     范围: 针对当前标签及子标签起作用
+
+2、内部 css
+    范围： 针对html的任何位置添加 style 标签，在标签内写 css 样式
+
+3、外部 css
+    在外部独立的 css 文件,使用 link 引入
+
+
+
+ -->
+
+    <style>
+        /* 属性名：属性值； */
+        /* #myid {
+            color: green;
+            font-size: 50;
+        } */
+
+
+        div {
+            font-size: 50px;
+            color: green;
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" type="text/css" href="./03.css">
+</head>
+
+<body>
+    <!-- ID 选择器 -->
+    <!-- <div id='myid'>今天星期二</div> -->
+
+    <!-- 行内 css -->
+    <div style="color:red;font-size:100px;">行内css</div>
+    <!-- 内部 css -->
+    <div>内部css</div>
+    <!-- 外部标签 -->
+    <!-- <span></span> -->
+
+</body>
+
+</html>

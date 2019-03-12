@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>其他浮动属性</title>
+
+
+  <!--
+超出部分如何处理  overflow
+        overflow:
+              hidden 超出部分隐藏
+              scroll 带滚动条
+        overflow-y
+        overflow-x
+
+        重要作用：
+            第二种清除浮动的方法：
+            在父标签上可以使用 overflow:hidden;来清除浮动造成的影响
+显示与隐藏：
+
+
+
+ -->
+
+  <style>
+    .box1 {
+      width: 200px;
+      background: #0a0;
+      height: 60px;
+      line-height: 30px;
+      overflow-y: scroll;
+      border: 1px solid #f00;
+    }
+
+    .box>div {
+
+      width: 400px;
+      height: 100px;
+      background: #0a0;
+      border: 1px solid #444;
+
+    }
+
+    .box {
+      overflow: hidden;
+    }
+
+    .box2 {
+      float: left;
+    }
+
+    .box3 {
+      float: right;
+      display: none;
+    }
+
+    .content {
+      border: 2px solid #f00;
+      background: #eee;
+      padding: 10px;
+      width: 300px;
+      height: 100px;
+    }
+
+    .content {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box1">box1检索或设置当对象的1检索或设置当对象的box1检索或设置当对象的1检索或设置当对象box1检索或设置当对象的1检索或设置当对象制定内容超过其制定高度</div>
+  <div class="box">
+
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+
+  </div>
+
+  <div>box1检索或设置当对象的1检索或设置当对象的box1检索或设置当对象的1检索或设置当对象box1检索或设置当对象的1检索或设置当对象制定内容超过其制定高度</div>
+
+
+
+  <h1 onmouseover="show(1)">今天星期三</h1>
+  <h1 onmouseover="show(2)">我们在上课额</h1>
+  <h1 onmouseover="show(3)">好嗨哟</h1>
+
+
+  <div class="content" id="content1">1111</div>
+  <div class="content" id="content2">2222</div>
+  <div class="content" id="content3">3333</div>
+
+
+  <script>
+    function show(n) {
+
+      var obj = document.querySelector('#content' + n);
+      var alldiv = document.querySelectorAll('.content');
+
+
+      for (var i = 0; i < alldiv.length; i++) {
+        alldiv[i].style.display = 'block';
+      }
+
+      obj.style.display = 'none';
+    }
+  </script>
+
+</body>
+
+</html>

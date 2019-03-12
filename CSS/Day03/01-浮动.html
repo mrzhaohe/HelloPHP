@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>浮动</title>
+
+
+  <!--
+
+      浮动属性：
+        float 设置盒子的浮动布局
+              none  没有浮动
+              left  左浮动
+              right 右浮动
+
+
+        注意： 因为浮动是将盒子从普通文本流中脱离出来，相当于原来的位置就空出来了，后面的内容就自动上移（称为浮动造成的影响）
+              如果不希望对后面的盒子造成影响，就清除浮动
+
+
+        clear 清除浮动造成的影响
+                left
+                right
+                both
+ -->
+
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      background: #f00;
+      padding: 10px;
+      /* border: 10px solid #000; */
+      margin: 20px;
+
+    }
+
+    .box1 {
+      float: left;
+      background: #0f0;
+      border: 0;
+    }
+
+    .box2 {
+      float: left;
+    }
+
+    .box3 {
+      float: left;
+    }
+
+    br {
+      clear: both;
+      background: #aaa;
+    }
+
+    p {
+      margin-top: 10px;
+      background: #aaa;
+      /* clear: both; */
+      /* 清除所有浮动效果 */
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>浮动属性</h1>
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3">box3</div>
+  <br/>
+  <p>
+    一切始于5月16日。当天中午，在第二届世界智能大会第一场主论坛的末尾，天津市副市长孙文魁在会上介绍“海河英才”行动计划，放宽对学历型人才、资格型人才、技能型人才、创业型人才和急需型人才的落户条件。根据这一政策，在津无工作、无房、无社保，年龄不超过40周岁的全日制高校毕业本科生可“零门槛”直接落户。
+
+  </p>
+
+</body>
+
+</html>
